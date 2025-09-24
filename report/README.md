@@ -42,4 +42,5 @@ https://typora.io/#download
 ### 方法二：vscode + Markdown Preview Enhanced 插件
 
 > 这个只需在vscode中下载插件即可完成预览和导出操作。
+
 ![alt text](Markdown.png)

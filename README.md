@@ -10,7 +10,7 @@
     \|_______|\|__|\|__|    \|__|  \|__|\|__|\|_______|\|__|\|__|\|_______|
 ```
 
-模板仓库：[RUC DataLab](https://github.com/RUCICS/Datalab-2025Fall)
+模板仓库：[RUC Datalab-2025Fall](https://github.com/RUCICS/Datalab-2025Fall)
 
 ## 项目编译与环境指南
 
