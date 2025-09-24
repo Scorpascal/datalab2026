@@ -30,22 +30,6 @@ sudo apt-get remove gcc g++
 
 如果仍有问题，可以联系李甘助教获取服务器登陆信息，在服务器上完成本实验。
 
---------
-
-Python 编译环境已弃用，现在你不需要执行任何指令来配置，如果你第一次读到这个文档，请忽略这一部分。对于服务器用户，你不需要执行任何配置。
-
-> Python 编译环境，我们演示 Virtualenv 下的配置方法，如果你使用 Conda 可以自行配置类似的环境出来
-> 
-> ```bash
-> sudo apt-get update
-> sudo apt-get install python3 python3-pip python3-venv
-> python3 -m venv venv # 如果你在我们提供的服务器上进行本实验，这一步请从这里开始
-> . venv/bin/activate
-> pip install pycparser -i https://mirrors.aliyun.com/pypi/simple/
-> ```
-
---------
-
 如果你想获得 VSCode 的最佳代码提示体验，请指定 `cStandard` 为 `gnu99`:
 
 ```json
