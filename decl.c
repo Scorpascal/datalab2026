@@ -16,7 +16,7 @@ test_rec test_set[] = {
     {"logicalShift", (funct_t)logicalShift, (funct_t)test_logicalShift, 2, "$", 20, 3, {{TMin, TMax}, {0, 31}, {TMin, TMax}}},
     {"float_i2f", (funct_t)float_i2f, (funct_t)test_float_i2f, 1, "$", 30, 4, {{1, 1}, {1, 1}, {1, 1}}},
     {"leftBitCount", (funct_t)leftBitCount, (funct_t)test_leftBitCount, 1, "$", 40, 4, {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
-    {"floatPower2", (funct_t)floatPower2, (funct_t)test_floatPower2, 1, "$", 30, 4, {{1, 1}, {1, 1}, {1, 1}}},
+    {"floatPower2", (funct_t)floatPower2, (funct_t)test_floatPower2, 1, "$", 30, 4, {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
     {"floatScale2", (funct_t)floatScale2, (funct_t)test_floatScale2, 1, "$", 30, 4, {{1, 1}, {1, 1}, {1, 1}}},
     {"reverse", (funct_t)reverse, (funct_t)test_reverse, 1, "$", 30, 3, {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
     {"samesign", (funct_t)samesign, (funct_t)test_samesign, 2, "$", 12, 2, {{TMin, TMax}, {TMin, TMax}, {TMin, TMax}}},
