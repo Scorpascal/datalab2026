@@ -11,6 +11,7 @@ class FunctionAnalyzer(c_ast.NodeVisitor):
         self.has_array = False
         self.function_name = None
         self.type_conversions = []
+        self.ternary_ops = []
 
     def visit_FuncDef(self, node):
         self.function_name = node.decl.name
@@ -18,6 +19,11 @@ class FunctionAnalyzer(c_ast.NodeVisitor):
 
     def visit_BinaryOp(self, node):
         self.operators.append(node.op)
+        self.generic_visit(node)
+    def visit_TernaryOp(self, node):
+        
+        self.ternary_ops.append(node)
+        
         self.generic_visit(node)
 
     def visit_UnaryOp(self, node):
@@ -249,10 +255,11 @@ def test_legality(ast, function):
             operators.append("+")
         else:
             operators.append(i)
-
     illegal = set()
     if analyzer.has_array:
         illegal.add("array")
+    if len(analyzer.ternary_ops) !=0:
+        operators.append("? :")
     for i in operators:
         if i != "==":
             i = i.replace("=", "")
@@ -383,8 +390,7 @@ def main():
                 else:
                     print(f"{' ' *33}error{i+1}: {msg_body}")
 
-    max_points = sum(problem_info["rating"] for problem_info in problem_infos.values())
-    print(f"Total points: {total_points}/{max_points}")
+    print(f"Total points: {total_points}")
 
     # AutoGrader
     with open(".autograder_result", "w") as f:
