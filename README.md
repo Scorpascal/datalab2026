@@ -50,14 +50,15 @@ make
 
 ### Quick Start
 
+先在GitHub上fork此仓库
+
 ```bash
 # 在我们的服务器上，不需要执行这一行
 sudo apt-get update && sudo apt-get install build-essential gcc-multilib
 
-# 其中 annaFJM 改成你的用户名
-git clone git@github.com:RUCICS/datalab2025fall-annaFJM.git
+git clone <你的仓库地址>
 
-cd datalab2025fall-annaFJM
+cd datalab2026
 
 make
 python3 test.py
