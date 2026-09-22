@@ -10,16 +10,16 @@ btest.c:481:12: warning: variable 'max_points' set but not used [-Wunused-but-se
 gcc -O0 -Wall -std=gnu99 -o fshow fshow.c
 gcc -O0 -Wall -std=gnu99 -o ishow ishow.c
 Make success.
-bitAnd          1/1:     PASS    detail: Pass using 4 operations including {'|', '~'} and {'int'}.
-bitXor          1/1:     PASS    detail: Pass using 7 operations including {'&', '~'} and {'int'}.
-samesign        2/2:     PASS    detail: Pass using 9 operations including {'!', '^', '&', '>>'} and {'int'}.
-logtwo          4/4:     PASS    detail: Pass using 17 operations including {'>', '|', '<<', '>>'} and {'int'}.
-byteSwap        4/4:     PASS    detail: Pass using 12 operations including {'<<', '^', '&', '>>'} and {'int'}.
-reverse         3/3:     PASS    detail: Pass using 23 operations including {'|', '<<', '&', '>>'} and {'unsigned'}.
-logicalShift    3/3:     PASS    detail: Pass using 11 operations including {'+', '|', '~', '!', '>>', '&'} and {'int'}.
-leftBitCount    4/4:     PASS    detail: Pass using 34 operations including {'+', '~', '!', '>>', '<<'} and {'int'}.
-float_i2f       4/4:     PASS    detail: Pass using 20 operations including {'>', '+', '-', '|', '==', '!', '>>', '<<', '&', '<'} and {'while', 'if', 'int', 'unsigned'}.
-floatScale2     4/4:     PASS    detail: Pass using 11 operations including {'+', '|', '==', '!', '<<', '&'} and {'if', 'unsigned'}.
-float64_f2i     3/3:     PASS    detail: Pass using 15 operations including {'-', '|', '~', '<<', '>>', '>', '&', '<'} and {'if', 'int', 'unsigned'}.
-floatPower2     4/4:     PASS    detail: Pass using 9 operations including {'+', '-', '<<', '>', '<'} and {'if', 'int', 'unsigned'}.
+bitAnd          1/1:     PASS    detail: Pass using 4 operations including {'~', '|'} and {'int'}.
+bitXor          1/1:     PASS    detail: Pass using 7 operations including {'~', '&'} and {'int'}.
+samesign        2/2:     PASS    detail: Pass using 8 operations including {'^', '>>', '!', '&'} and {'int'}.
+logtwo          4/4:     PASS    detail: Pass using 17 operations including {'|', '>>', '>', '<<'} and {'int'}.
+byteSwap        4/4:     PASS    detail: Pass using 12 operations including {'&', '^', '>>', '<<'} and {'int'}.
+reverse         3/3:     PASS    detail: Pass using 23 operations including {'|', '>>', '<<', '&'} and {'unsigned'}.
+logicalShift    3/3:     PASS    detail: Pass using 11 operations including {'|', '&', '+', '!', '>>', '~'} and {'int'}.
+leftBitCount    4/4:     PASS    detail: Pass using 34 operations including {'<<', '+', '!', '>>', '~'} and {'int'}.
+float_i2f       4/4:     PASS    detail: Pass using 20 operations including {'|', '&', '<<', '==', '<', '-', '>', '+', '!', '>>'} and {'if', 'int', 'unsigned', 'while'}.
+floatScale2     4/4:     PASS    detail: Pass using 11 operations including {'|', '<<', '&', '==', '+', '!'} and {'if', 'unsigned'}.
+float64_f2i     3/3:     PASS    detail: Pass using 15 operations including {'|', '&', '<<', '<', '-', '>', '>>', '~'} and {'if', 'int', 'unsigned'}.
+floatPower2     4/4:     PASS    detail: Pass using 9 operations including {'<<', '<', '-', '>', '+'} and {'if', 'int', 'unsigned'}.
 Total points: 37
