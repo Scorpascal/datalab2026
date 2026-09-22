@@ -8,3 +8,6 @@ result.txt
 __pycache__
 yacctab.py
 lextab.py
+
+# Local-only named submission copies. Public source and deliverables remain tracked.
+/private_submission/
